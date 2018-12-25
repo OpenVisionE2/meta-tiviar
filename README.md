@@ -1,2 +1,2 @@
 # meta-tiviar
-Tiviar BSP layer for PLi's OE
+Tiviar BSP layer for Open Vision
