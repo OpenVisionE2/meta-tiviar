@@ -3,7 +3,7 @@ SECTION = "kernel"
 LICENSE = "GPLv2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "(tiviaraplus|tiviarmin)"
+COMPATIBLE_MACHINE = "^(tiviaraplus|tiviarmin)$"
 
 KERNEL_RELEASE = "4.10.6"
 
