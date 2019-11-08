@@ -67,7 +67,10 @@ IMAGE_CMD_ubi_append = "\
     rm -Rf ${IMAGEDIR}; \
     "
 
-MACHINE_FEATURES += "ci 3dtv alsa hdmicec switchoff blindscan-tbs linuxwifi videoenhancement textlcd"
+MACHINE_FEATURES += "ci 3dtv alsa hdmicec switchoff blindscan-tbs linuxwifi videoenhancement textlcd middleflash"
+
+# Broken bootloader can only flash around 100 MB
+FLASHSIZE = "96"
 
 BOOTLOGO_FILENAME = "splash.bin"
 
