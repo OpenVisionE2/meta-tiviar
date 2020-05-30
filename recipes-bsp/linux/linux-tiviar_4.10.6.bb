@@ -7,7 +7,7 @@ COMPATIBLE_MACHINE = "^(tiviaraplus|tiviarmin)$"
 
 KERNEL_RELEASE = "4.10.6"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "e5d32dd03b742e6101fde917dcba837d"
 SRC_URI[sha256sum] = "2997b825996beabc25d2428d37d680f56e4fa971500eabd2033a6fc13cf5765e"
