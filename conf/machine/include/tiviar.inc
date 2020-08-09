@@ -1,6 +1,8 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
+KERNELVERSION = "4.10.6"
+
 BOX_BRAND = "tiviar"
 
 MTD_KERNEL = "mtd1"
@@ -9,16 +11,15 @@ KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    tiviar-dvb-modules-${MACHINE} \
-    "
+	tiviar-dvb-modules-${MACHINE} \
+	"
 
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
-    gstreamer1.0-plugin-dvbmediasink \
-    "
-
+	gstreamer1.0-plugin-dvbmediasink \
+	"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
@@ -26,7 +27,7 @@ TARGET_ARCH = "mipsel"
 DEFAULTTUNE = "mips32el"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-tiviar"
-PREFERRED_VERSION_linux-tiviar = "4.10.6"
+PREFERRED_VERSION_linux-tiviar = "${KERNELVERSION}"
 
 KERNEL_IMAGETYPE = "vmlinux"
 KERNEL_OUTPUT = "${KERNEL_IMAGETYPE}"
