@@ -12,14 +12,11 @@ ROOTFS_FILE = "rootfs.bin"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	tiviar-dvb-modules-${MACHINE} \
+	gstreamer1.0-plugin-dvbmediasink \
 	"
 
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
-	gstreamer1.0-plugin-dvbmediasink \
-	"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
