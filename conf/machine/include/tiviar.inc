@@ -14,7 +14,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	tiviar-dvb-modules-${MACHINE} \
 	"
 
-DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
